@@ -1,6 +1,7 @@
 const quoteContainer = document.getElementById("quote-container");
 const quoteText = document.getElementById("quote");
 const quoteAuthor = document.getElementById("author");
+const newQuoteButton = document.getElementById("new-quote");
 
 let apiQuotes = [];
 
@@ -38,6 +39,9 @@ async function getQuote() {
     console.log("Whoops, no quote!", error);
   }
 }
+
+// Event Listeners
+newQuoteButton.addEventListener("click", newQuote);
 
 // On Load
 getQuote();
