@@ -1,6 +1,7 @@
 const quoteContainer = document.getElementById("quote-container");
 const quoteText = document.getElementById("quote");
 const quoteAuthor = document.getElementById("author");
+const twitterButton = document.getElementById("twitter");
 const newQuoteButton = document.getElementById("new-quote");
 
 let apiQuotes = [];
@@ -48,6 +49,7 @@ function tweetQuote() {
 
 // Event Listeners
 newQuoteButton.addEventListener("click", newQuote);
+twitterButton.addEventListener("click", tweetQuote);
 
 // On Load
 getQuote();
