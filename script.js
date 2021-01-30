@@ -51,5 +51,12 @@ function tweetQuote() {
 newQuoteButton.addEventListener("click", newQuote);
 twitterButton.addEventListener("click", tweetQuote);
 
+// Show Local Quotes from quotes.js
+function newLocalQuote() {
+  const quote = localQuotes[Math.floor(Math.random() * apiQuotes.length)];
+  console.log(quote);
+}
+
 // On Load
 getQuote();
+// newLocalQuote();
